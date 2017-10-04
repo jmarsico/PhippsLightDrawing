@@ -17,6 +17,7 @@ LightManager lightManager;
 void setup() {
   // 1 pixel = 1 inch (technically)
   size(1200, 360);
+  frameRate(30);
   background(0);
 
 

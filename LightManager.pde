@@ -20,18 +20,18 @@ class LightManager{
     lights = new ArrayList<Light>();
     maxColorBufSize = 50;
     col = 0;
-    osc = new OscP5(this, 12345);
+    osc = new OscP5(this, 4000);
     myLoc = new NetAddress(destIP, destPort);
     sending = false;
   
     // Create lights
     for (int i = 0; i < numFixturesOnSide; i++) {
-      Light l = new Light(new PVector((widthScale*i*2)-1, height/3), 10, 48); 
+      Light l = new Light(new PVector((widthScale*i*2)-1, 30), 10, 48); 
       lights.add(l);
     }
   
     for (int i = 0; i < numFixturesOnSide; i++) {
-      Light l = new Light(new PVector((widthScale*i*2)-1, 2*height/3), 10, 48); 
+      Light l = new Light(new PVector((widthScale*i*2)-1, height - 30), 10, 48); 
       lights.add(l);
     }
   }

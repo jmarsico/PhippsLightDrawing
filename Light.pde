@@ -69,5 +69,9 @@ class Light {
   void displayLight(int indLight) {
     fill(indColors[indLight]);
     rect((int) loc.x + indLength * indLight, (int) loc.y, indLength, wid);
+    
+    noFill();
+    stroke(255);
+    rect((int) loc.x + indLength * indLight, (int) loc.y, indLength, wid);
   }
 }
